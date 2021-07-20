@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;700&display=swap");
+
+body {
+  font-family: "Mukta", sans-serif;
+  background: url(https://i.stack.imgur.com/jGlzr.png);
+  padding: 100px 0;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.container {
+  width: 800px;
+  min-height: 500px;
+  border: 10px solid rgb(255, 255, 255);
+  margin: 0 auto;
+  background: white;
+}
+.header {
+  display: flex;
+  height: 150px;
+}
+
+.title-block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  font-size: 30px;
+  background: url(https://images.unsplash.com/photo-1607296393394-6e25d0fc15cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1264&q=80)
+    no-repeat center center / cover;
+  color: black;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.title-block::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0.5;
+}
+.title {
+  position: relative;
+  z-index: 1;
+}
+
+.userpic {
+  display: flex;
+  height: 100%;
+  width: 20%;
+  background: url(https://sun9-46.userapi.com/impg/aV6CP2TNKVciXhIOC-KJYmVr3TK2HIwRweA7OQ/FGv5NXw7jm8.jpg?size=907x1080&quality=96&sign=661bc17ac2bd88e5a51d57d400c4280c&type=album)
+    no-repeat center center / cover;
+}
+.nav ul {
+  display: flex;
+  background: rgb(223, 222, 222);
+  margin: 10px 0;
+}
+
+.nav li a {
+  display: flex;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border-right: 1px solid rgb(180, 180, 180);
+  transition: background 0.3s ease;
+}
+
+.nav li a:hover {
+  background: rgb(158, 158, 158);
+}
+
+.content-wrapper {
+  display: flex;
+}
+
+.content {
+  width: 70%;
+  padding: 20px;
+}
+
+.content p {
+  line-height: 35px;
+  font-size: 20px;
+}
+
+.sidebar {
+  padding: 20px;
+  width: 30%;
+  text-align: right;
+}
+
+.skills li {
+  padding: 10px 0;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.skills li:hover {
+  transform: translateX(10px);
+}
